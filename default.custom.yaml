@@ -2,4 +2,7 @@ patch:
   menu:
     page_size: 6
   schema_list:
-  - schema: double_pinyin_flypy   # 小鹤双拼
+    - schema: double_pinyin_flypy # 小鹤双拼
+  "switcher/hotkeys":             # 唤出输入方案选单的快捷键
+    - "Control+s"                 # 避开 vs code 中呼出终端快捷键
+
