@@ -65,5 +65,48 @@ patch:
       hilited_candidate_label_color: 0xffffff   # 第一候选项编号颜色
       comment_text_color: 0xdedddd              # 拼音等提示文字颜色
 
-  "app_options/com.runningwithcrayons.Alfred/ascii_mode": true
-  "app_options/com.coteditor.CotEditor/ascii_mode": true
+  app_options:
+    com.apple.Spotlight:
+      ascii_mode: false
+    com.alfredapp.Alfred:
+      ascii_mode: false
+    com.runningwithcrayons.Alfred-2:
+      ascii_mode: false
+    com.blacktree.Quicksilver:
+      ascii_mode: false
+    com.apple.Terminal:
+      ascii_mode: false
+      no_inline: true
+    com.googlecode.iterm2:
+      ascii_mode: false
+      no_inline: true
+    org.vim.MacVim:
+      ascii_mode: false  # 初始爲西文模式
+      no_inline: true   # 不使用行內編輯
+      vim_mode: true    # 退出VIM插入模式自動切換輸入法狀態
+    com.apple.dt.Xcode:
+      ascii_mode: false
+    com.barebones.textwrangler:
+      ascii_mode: false
+    com.macromates.TextMate.preview:
+      ascii_mode: false
+    com.github.atom:
+      ascii_mode: false
+    com.microsoft.VSCode:
+      ascii_mode: false
+    com.sublimetext.2:
+      ascii_mode: false
+    org.gnu.Aquamacs:
+      ascii_mode: false
+    org.gnu.Emacs:
+      ascii_mode: false
+      no_inline: true
+    co.zeit.hyper:
+      ascii_mode: false
+    com.google.Chrome:
+      # 規避 https://github.com/rime/squirrel/issues/435
+      inline: true
+    ru.keepcoder.Telegram:
+      # 規避 https://github.com/rime/squirrel/issues/475
+      inline: true
+
