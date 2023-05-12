@@ -1,5 +1,6 @@
 # Rime schema
 # encoding: utf-8
+# https://github.com/rime/rime-double-pinyin/blob/master/double_pinyin_flypy.schema.yaml
 
 schema:
   schema_id: double_pinyin_flypy

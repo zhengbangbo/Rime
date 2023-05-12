@@ -1,13 +1,11 @@
 patch:
-  show_notifications_when: appropriate # 状态通知，适当，也可设为全开（always）全关（never）
-
-  #style/color_scheme: mojave_dark
+  show_notifications_when: appropriate        # 状态通知，适当，也可设为全开（always）全关（never）
   style/color_scheme: system_blue             # 方案命名，不能有空格
   style/color_scheme_dark: mritd_dark
-  preset_color_schemes:
+  preset_color_scheme:
     system_blue:
       author: "scomper <scomper@gmail.com>"   # 作者信息
-      color_space: display_p3 # Only available on macOS 10.12+
+      color_space: display_p3                 # Only available on macOS 10.12+
       back_color: 0xFFFFFF                    # 候选条背景色，24位色值，16进制，BGR顺序
       border_color: 0xFFFFFF                  # 边框色
       candidate_text_color: 0x000000          # 预选项文字颜色
@@ -20,20 +18,18 @@ patch:
       name: "系统蓝／System Blue"
       text_color: 0x424242                    # 拼音行文字颜色
       label_color: 0x999999                   # 预选栏编号颜色
-      candidate_list_layout: linear                        # 水平排列 linear | stacked
-      text_orientation: horizontal                             # horizontal | vertical
+      candidate_list_layout: linear           # 水平排列 linear | stacked
+      text_orientation: horizontal            # horizontal | vertical
       inline_preedit: true                    # 单行显示，false双行显示
-      candidate_format: "%c.\u2005%@ \u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
+      candidate_format: "%c.\u2005%@ \u2005"  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
       font_face: "MiSans"# 候选词编号字体
       font_point: 16                          # 候选文字大小
       label_font_point: 14                    # 候选编号大小
-      label_font_face: "SFCompactText-Regular"# 候选词编号字体
+      label_font_face: "SFCompactText-Regular" # 候选词编号字体
       corner_radius: 6                        # 候选条圆角
       hilited_corner_radius: 4                # 高亮圆角
       border_height: 4                        # 窗口边界高度，大于圆角半径才生效
       border_width: 4                         # 窗口边界宽度，大于圆角半径才生效
-    #      border_color_width: 0
-
     mritd_dark:
       # https://mritd.me/2019/03/23/oh-my-rime/
       name: 漠然／mritd dark
@@ -52,7 +48,6 @@ patch:
       #font_face: "YaHei Monaco Hybird"          # 候选词字体
       font_point: 16                            # 候选字词大小
       label_font_point: 14                      # 候选编号大小
-
       text_color: 0xdedddd                      # 拼音行文字颜色，24位色值，16进制，BGR顺序
       back_color: 0x4b4b4b                      # 候选条背景色
       label_color: 0x888785                     # 预选栏编号颜色
@@ -65,7 +60,7 @@ patch:
       hilited_candidate_label_color: 0xffffff   # 第一候选项编号颜色
       comment_text_color: 0xdedddd              # 拼音等提示文字颜色
 
-  app_options:
+  app_options:                                  # App 特别设置
     com.apple.Spotlight:
       ascii_mode: false
     com.alfredapp.Alfred:
@@ -80,10 +75,11 @@ patch:
     com.googlecode.iterm2:
       ascii_mode: false
       no_inline: true
+      vim_mode: true
     org.vim.MacVim:
       ascii_mode: false  # 初始爲西文模式
-      no_inline: true   # 不使用行內編輯
-      vim_mode: true    # 退出VIM插入模式自動切換輸入法狀態
+      no_inline: true    # 不使用行內編輯
+      vim_mode: true     # 退出VIM插入模式自動切換輸入法狀態
     com.apple.dt.Xcode:
       ascii_mode: false
     com.barebones.textwrangler:
@@ -94,6 +90,7 @@ patch:
       ascii_mode: false
     com.microsoft.VSCode:
       ascii_mode: false
+      vim_mode: true
     com.sublimetext.2:
       ascii_mode: false
     org.gnu.Aquamacs:
